@@ -32,6 +32,7 @@
             $sql = 'SELECT * FROM customers ORDER BY id DESC';
             foreach ($pdo->query($sql) as $row) {
                 echo '<tr>';
+
                 echo '<td>'. $row['name'] . '</td>';
 
                 echo '<td>'. $row['email'] . '</td>';
